@@ -204,7 +204,7 @@ body {
 }
 
 .cake-layer.middle {
-  width: 200px;
+  width: 170px;
 }
 
 .cake-layer.bottom {
@@ -215,7 +215,7 @@ body {
 /* Candles */
 .candles {
   position: absolute;
-  top: -60px;              /* sits on top layer */
+  top: -40px;              /* sits on top layer */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
