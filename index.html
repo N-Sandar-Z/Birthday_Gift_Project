@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🎂 Birthday Celebration</h1>
+            <div class="nav-toggle" id="navToggle">☰</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="wishes.html" class="nav-link">Wishes</a></li>
+                <li><a href="games.html" class="nav-link">Games</a></li>
+                <li><a href="memories.html" class="nav-link">Memories</a></li>
+                <li><a href="message.html" class="nav-link">Message</a></li>
+                <li><a href="music.html" class="nav-link">Music</a></li>
+                <li><button id="soundToggle" class="sound-btn">🔊 Sound ON</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Greeting Section -->
+        <section class="greeting-section">
+            <div class="confetti" id="confetti"></div>
+            <h2 class="greeting-text">🎊 HAPPY BIRTHDAY! 🎊</h2>
+            <p class="greeting-subtext">Welcome to your special celebration!</p>
+        </section>
+
+        <!-- Animated Cake -->
+        <section class="cake-section">
+            <div class="cake-container">
+                <div class="cake">
+                    
+                    <div class="cake-layer top"></div>
+                    <div class="cake-layer middle"></div>
+                    <div class="cake-layer bottom"></div>
+                </div>
+
+                <!-- Candles -->
+                <div class="candles">
+                    <div class="candle" data-candle="1">
+                        <div class="flame"></div>
+                        <div class="candle-stick"></div>
+                        
+                    </div>
+                    <div class="candle" data-candle="2">
+                           <div class="flame"></div>
+                        <div class="candle-stick"></div>
+                     
+                    </div>
+                    <div class="candle" data-candle="3">
+                        <div class="flame"></div>
+                        <div class="candle-stick"></div>
+                        
+                    </div>
+                    <div class="candle" data-candle="4">
+                        <div class="flame"></div>
+                        <div class="candle-stick"></div>
+                        
+                    </div>
+                    <div class="candle" data-candle="5">
+                        <div class="flame"></div>
+                        <div class="candle-stick"></div>
+                        
+                    </div>
+                </div>
+
+                <!-- Decorations -->
+                <div class="decorations">
+                    <span class="emoji bounce">🎈</span>
+                    <span class="emoji bounce" style="animation-delay: 0.2s">🎉</span>
+                    <span class="emoji bounce" style="animation-delay: 0.4s">⭐</span>
+                    <span class="emoji bounce" style="animation-delay: 0.6s">🎁</span>
+                    <span class="emoji bounce" style="animation-delay: 0.8s">🎊</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Buttons -->
+        <section class="interactive-section">
+            <h3>Tap to Celebrate!</h3>
+            <div class="button-grid">
+                <button class="action-btn candle-btn" id="lightCandlesBtn">
+                    <span class="emoji">🕯️</span>
+                    <span>Light Candles</span>
+                </button>
+                <button class="action-btn balloon-btn" id="popBalloonsBtn">
+                    <span class="emoji">🎈</span>
+                    <span>Pop Balloons</span>
+                </button>
+                <button class="action-btn confetti-btn" id="confettiBtn">
+                    <span class="emoji">🎉</span>
+                    <span>Confetti Blast</span>
+                </button>
+                <button class="action-btn fireworks-btn" id="fireworksBtn">
+                    <span class="emoji">✨</span>
+                    <span>Fireworks</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Balloons to Pop -->
+        <section class="balloons-section" id="balloons">
+            <div class="balloon" data-balloon="1"></div>
+            <div class="balloon" data-balloon="2"></div>
+            <div class="balloon" data-balloon="3"></div>
+            <div class="balloon" data-balloon="4"></div>
+            <div class="balloon" data-balloon="5"></div>
+            <div class="balloon" data-balloon="6"></div>
+            <div class="balloon" data-balloon="7"></div>
+            <div class="balloon" data-balloon="8"></div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="message-section">
+            <p class="message-text">Wishing you a day filled with joy, laughter, and wonderful memories! 💫</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Music - Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🎂 Birthday Celebration</h1>
+            <div class="nav-toggle" id="navToggle">☰</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="wishes.html" class="nav-link">Wishes</a></li>
+                <li><a href="games.html" class="nav-link">Games</a></li>
+                <li><a href="memories.html" class="nav-link">Memories</a></li>
+                <li><a href="message.html" class="nav-link">Message</a></li>
+                <li><a href="music.html" class="nav-link active">Music</a></li>
+                <li><button id="soundToggle" class="sound-btn">🔊 Sound ON</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="page-header">
+            <h2>🎵 Birthday Music</h2>
+            <p>Choose your favorite celebration songs!</p>
+        </section>
+
+        <!-- Music Player -->
+        <section class="music-section">
+            <div class="player-container">
+                <div class="now-playing">
+                    <h3 id="songTitle">Select a Song</h3>
+                    <p id="artistName">Happy Birthday Playlist</p>
+                </div>
+
+                <div class="player-controls">
+                    <button id="prevBtn" class="control-btn">⏮️</button>
+                    <button id="playBtn" class="control-btn play-btn">▶️</button>
+                    <button id="nextBtn" class="control-btn">⏭️</button>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="time-display">
+                        <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                    </div>
+                </div>
+
+                <div class="volume-container">
+                    <span>🔊</span>
+                    <input type="range" id="volumeSlider" min="0" max="100" value="50">
+                </div>
+            </div>
+
+            <!-- Playlist -->
+            <div class="playlist">
+                <h3>🎵 Happy Birthday Playlist</h3>
+                <ul id="playlistContainer" class="song-list">
+                    <!-- Songs will be populated by JavaScript -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Fun Fact -->
+        <section class="fun-fact-section">
+            <div class="fun-fact-card">
+                <p>🎼 Did you know? The "Happy Birthday" song has been sung more than any other song in the English language!</p>
+            </div>
+        </section>
+    </main>
+
+    <audio id="audioPlayer"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
